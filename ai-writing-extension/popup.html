@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Link to stylesheet and Google font -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1 class = "writing-header">RefineRight</h1>
+    <!-- Textarea where user pastes input -->
+    <textarea id="userInput" placeholder="Paste your text here..."></textarea>
+    <!-- Button to send text to backend AI for improvement -->
+    <button id="improveBtn">Improve Writing</button>
+    <!-- Section to display AI-improved text -->
+    <h3 class="returned-txt">Improved Text:</h3>
+    <div id="output" class="result-box"></div>
+    <!-- Section for in-page word enhancement toggle -->
+    <h3 class = "replace">Replace Dull Words:</h3>
+    <!-- Custom toggle switch -->
+    <label class = "highlight-switch">
+        <input type = "checkbox" id = "toggleSwitch">
+        <span class = "slider"></span>
+    </label>
+    <!-- Script connection to popup logic -->
+    <script src="popup.js"></script>
+</body>
+
+</html>

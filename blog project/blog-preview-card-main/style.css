@@ -1,0 +1,114 @@
+/* Reset and global font setup */
+* {
+    font-family: "Figtree", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+/* Page background color */
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-size: 16px;
+}
+
+
+/* Main card container */
+#container {
+    background-color: hsl(0, 0%, 100%);
+    width: 400px;
+    margin-top: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 550px;
+    border-radius: 16px;
+    border: 1px solid;
+    box-shadow: 8px 8px 0px;
+}
+
+/* Top image styling */
+.yllow img{
+    border-radius: 10px;
+}
+
+.yllow{
+    padding:17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Text section spacing */
+.text{
+margin-left: 29px;
+
+}
+
+/* "Learning" label style */
+span{
+    background-color:hsl(47, 88%, 63%) ;
+    padding: 5px;
+    color: hsl(0, 0%, 7%);
+    font-weight: bold;
+    padding-right: 15px;
+    width: fit-content;
+    padding: 4px 12px;
+    border-radius: 0px;
+    
+}
+
+/* Spacing and font colors */
+.learn{
+    margin-bottom: 20px;
+}
+
+.date{
+    margin-bottom: 22px;
+    color: hsl(0, 0%, 7%);
+    
+}
+
+/* Blog title with hover effect */
+.foundations{
+    font-weight: bolder;
+    margin-bottom: 22px;
+    transition: color .2s ease-in;
+}
+
+.foundations:hover{
+    color:hsl(47, 88%, 63%);
+}
+
+/* Description text color */
+.info{
+    color: hsl(0, 0%, 42%)
+}
+
+/* Author section */
+.hooper img{
+    width: 40px;
+    margin-top: 22px;
+}
+
+.hooper{
+    display: flex;
+    align-content: center;
+}
+
+.hooper h4{
+    margin-top: 34px;
+    margin-left: 17px;
+}
+
+/* Responsive layout for mobile screens, doesnt always work */
+@media screen and (max-width:500px){
+    #container{
+        width:90%;
+        margin:2rem auto;
+    }
+}
+
+.yllow img{
+    width: 100%;
+}

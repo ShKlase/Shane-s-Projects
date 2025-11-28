@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-size:13px;
+}
+
+.display-none{
+    display: none;
+}
+
+#container{
+    width: 900px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+    height: 300px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.drawerpic img{
+    width: 360px;
+    height:300px;
+    display: block;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px
+}
+
+h1{
+    color:hsl(217, 19%, 35%);
+    
+    margin-bottom: 15px;
+}
+
+.para{
+    color:#6e8098;
+    margin-bottom: 15px;
+    line-height: 20px;
+    font-weight: 700;
+    
+    
+}
+
+
+.bigasshead{
+    width:50px;
+    border-radius:100px;
+    margin-right: 15px;
+}
+
+.arrow-container{
+    background-color: hsl(210, 46%, 95%);
+    width: 40px;
+    height:40px;
+border-radius: 500px;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+transition: all .2s ease-in;
+cursor: pointer;
+}
+
+.arrow-container:hover{
+    background-color: hsl(217, 19%, 35%);
+}
+
+.bigassarrow{
+    width:20px;
+    margin-right: 10px;
+    transition: all .2s ease-in;
+}
+
+
+
+
+.notha-arrrow-class {
+    display: flex;
+    align-items:center;
+   position: relative;
+}
+
+.date-container{
+    color:hsl(214, 17%, 51%);
+}
+
+.overall-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.share-shape-container{
+    background-color: #48556A;
+    border-radius: 7px;
+    width: 280px;
+    height: 56px;
+    position:absolute;
+    left: 325px;
+    top: -70px;
+    
+}
+
+.share-icons-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+    column-gap: 20px;
+    
+}
+
+.share-text-p{
+    color:#9DAEC2;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    line-height: 20px;
+
+}

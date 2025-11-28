@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  
+</head>
+<body>
+
+  <!-- Rating state start -->
+<div class = "rating-state-container">
+  <div class = "content-container">
+  <div class = star-container>
+    <img class = "star" src="./images/icon-star.svg">
+  </div>
+ <h1> How did we do?</h1>
+<p class = "let-us-know">
+  Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!</p>
+<div class = "btn-container">
+  <button class = "review-btn">1</button>
+  <button class = "review-btn">2</button>
+  <button class = "review-btn">3</button>
+  <button class = "review-btn">4</button>
+  <button class = "review-btn">5</button>
+  </div>
+<div></div>
+ <button class = submit-btn type = "submit">SUBMIT</button>
+  </div>
+</div>
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+<div class = "thank-you-container hide">
+  <div class = "img-container">
+  <img src="./images/illustration-thank-you.svg" class = "thanks-illustration">
+  </div>
+  <div class = "gpt-container">
+ <div class = selected-container>
+  <div class = "fuck-you">
+  You selected <!-- Add rating here --> <span class = review-score>5</span> out of 5</div>
+</div>
+</div>
+
+  <h1>Thank you!</h1>
+<p class = "appreciate">
+  We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
+
+  <!-- Thank you state end -->
+</div>
+  
+ <script src="index.js"></script>
+</body>
+</html>

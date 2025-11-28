@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+	<title>Tic Tac Toe Game</title>
+
+
+</head>
+	<body>
+		<!-- ==================== New Game Menu ==================== -->
+		<section id = "new-game-menu">
+		<!-- Logo for the game -->
+		<img class = "logo" src="./assets/images/SVG/logo.svg">
+		<!-- Player 1 mark selection -->
+		<div class ="selector-container">
+			<h3 class = "selector-header">Pick Player 1's Mark</h3>
+			<div class = "selectors">
+				<button class = "selector-btns" data-mark="X"><img src="./assets/images/SVG/icon-x-default.svg" class = "x-img"></button>
+				<button class = "selector-btns cop-out" data-mark="O"><img src="./assets/images/SVG/icon-o-default.svg" class="o-img"></button>
+			</div>
+			<p class = "selector-subheader">Remember: X Goes First</p>
+		</div>		
+		<!-- Buttons to start a new game -->
+		<button class = "new-game-btn-cpu">NEW GAME (VS CPU)</button>
+		<button class = "new-game-btn-player">NEW GAME (VS PLAYER)</button>
+	</section>
+
+	<!-- ==================== Game Board ==================== -->
+	<section id = "game-board" class = "hide">
+		<!-- Top bar with logo, turn indicator, and restart button -->
+		<div class ="turn-restart-container">
+			<img src="./assets/images/SVG/logo.svg" class = "logo-two">
+			<div class = "turn-container">
+				<img src="./assets/images/SVG/icon-x-default.svg" class = x-img-2>
+				TURN
+			</div>
+			<div class = "restart-container">
+				<button class ="restart-btn"><img src="./assets/images/SVG/icon-restart.svg" class = "restart-img"></button>
+			</div>
+		</div>
+
+		<!-- Tic Tac Toe board grid -->
+		<div class ="tic-tac-toe-board">
+			<div class="board-square"></div>
+			<div class="board-square"></div>
+			<div class="board-square"></div>
+			<div class="board-square"></div>
+			<div class="board-square"></div>
+			<div class="board-square"></div>
+			<div class="board-square"></div>
+			<div class="board-square"></div>
+			<div class="board-square"></div>
+		</div>
+
+		<!-- Scoreboard for X, O, and ties -->
+		<div class = "scoreboard">
+			<div class = "x-score">X (YOU)
+				<div class="x-tally">0</div>
+			</div>
+			<div class = "tie-score">TIES
+				<div class = "tie-tally">0</div>
+			</div>
+			<div class = "o-score">O (CPU)
+				<div class="o-tally">0</div>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- ==================== Win Screen ==================== -->
+	<section id = "win-screen" class = hide>
+		<!-- Overlay for modal -->
+		<div class = "modal-lightbox"></div>
+			<!-- Win/Draw message container -->
+			<div class = "modal-win-container">
+				<h3 class = "result">YOU WON!</h3>
+				<div class = "win-msg-container">
+					<img class = "round-winner-img" src="./assets/images/SVG/icon-x-win.svg"> 
+					<span class = "win-messsage">TAKES THE ROUND</span></div>
+				<!-- Buttons for quitting or next round -->
+				<div class = button-grid-container>
+					<button class = "quit-btn">QUIT</button>
+					<button class = "next-rnd-btn">NEXT ROUND</button>
+				</div>
+			</div>
+	</section>
+
+
+
+<!--JS-->
+<script src="index.js"></script>
+</body>
+</html>

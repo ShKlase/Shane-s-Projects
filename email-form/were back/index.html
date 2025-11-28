@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet">
+  
+  <title>Contact Form</title>
+
+</head>
+<body>
+  <!-- Success message container, hidden initially -->
+  <div class = "submit-hide">
+    <div class = sucess-container>
+      <div class = message-container>
+        <img class = "sucess-img" src="./assets/images/icon-success-check.svg">
+    <h3>Message Sent!</h3>
+    </div>
+
+    <span class = "thanks">Thanks for completing the form. We'll be in touch soon!</span>
+    </div>
+  </div>
+
+  <!-- Main form container -->
+<div class = "big-container">
+  <div class="info-container">
+ <h1 class = "contact-us"> Contact Us</h1> 
+
+    <!-- Name fields -->
+  <div class="name-labels">
+  <div class="input-container">
+  <label>First Name<span class="green">*</span></label>
+  <input class="name-boxes" placeholder = "" type="text">
+  </div>
+  
+  
+<div class="input-container">
+<label>Last Name<span class="green">*</span></label>
+ <input class="name-boxes" placeholder = "" type="text">
+</div>
+  </div>
+
+    <!-- Required field error messages -->
+  <div class = required-container>
+<div class="hide"><span class="red">This field is required</span></div>
+<div class="hide"><span class="red">This field is required</span></div>
+</div>
+
+<!-- Email field -->
+<div class = "email-container">
+  <label>Email Address<span class="green">*</span></label>
+  <input class="name-boxes" placeholder="" type="email">
+</div>
+
+
+  <div class = "email-hide">
+    <span class="red">Please enter a valid email address</span>
+  </div>
+  <div class = "hide margin">
+  <span class="red">This field is required</span>
+</div>
+
+<!-- Query type radio buttons -->
+<div class = "query-container">
+<label class = "query-label">Query Type<span class="green">*</span></label></div>
+<div class = "query-labels">
+  
+  <label>
+  <input class="query-type" type="radio" name="query"></input>
+  <span>General Enquiry</span>
+</label>
+
+<label>
+  <input class="query-type" type="radio" name="query"></input>
+  <span>Support Request</span>
+  </label>
+</div>
+<div class="hide margin2"><span class="red">Please select a query type</span></div>
+  
+
+  <!-- Message textarea -->
+  <div class = "message-header">Message<span class="green">*</span></div>
+  <div>
+  <textarea class = "message-box"></textarea></div>
+  <div class = "hide margin3"><span class="red">This field is required</span></div>
+
+  <!-- Consent checkbox -->
+ <div class = "idk">
+  <input type="checkbox" class="consent">
+  I consent to being contacted by the team<span class = "green">*</span>
+</div>
+  
+  <div class = "hide"><span class = "red">To submit this form, please consent to being contacted</span></div>
+
+  <!-- Submit button -->
+  <button class = "submit-btn" type = "submit">Submit</button>
+
+  </div>
+  </div>
+  
+  <!-- JS -->
+  <script src = "index.js"></script>
+</body>
+</html>

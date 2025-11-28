@@ -1,0 +1,188 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(226, 43%, 10%);
+    font-size: 18px;
+    color:white;
+    font-family: "Rubik", sans-serif;
+}
+
+.big-box{
+    display: flex;
+    width:1100px;
+    height: 550px;
+    border: 1px solid red;
+    margin: auto;
+    margin-top: 400px;
+    
+}
+
+.work-box{
+    background-color: hsl(235, 46%, 20%);
+width:450px;
+border-radius: 15px;
+margin-right: 25px;
+height: 523px;
+
+}
+
+.jeremy-box{
+    background-color: hsl(246, 80%, 60%);
+    height: 68%;
+    border-radius: 10px;
+   padding-left:30px;
+  padding-right: 50px;
+  
+}
+
+.jeremypic{
+    height: 10%;
+    width: 40%;
+    outline: 3px solid white;
+    border-radius: 100px;
+    margin-top: 32px;
+    margin-bottom: 40px;
+}
+
+.report{
+    color: hsl(236, 100%, 87%);
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+h1{
+    font-weight: 300;
+}
+
+.day-week-month{
+    cursor: pointer;
+    margin-top: 20px;
+    padding-left: 25px;
+    transition: all .2s ease-in;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.day-week-month :hover{
+    color: white;
+}
+
+.daily.first{
+    margin-top: 15px;
+    color: hsl(236, 100%, 87%);
+    font-size: 16px;
+    background-color:transparent;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    width: 17%;
+    border: none;
+    transition: all .2s ease-in;
+}
+
+.daily.first:hover{
+    color: white;
+}
+
+.daily{
+    margin-bottom: 25px;
+    color: hsl(236, 100%, 87%);
+    background-color: transparent;
+        outline: none;
+        overflow: hidden;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        width: 25%;
+        border: none;
+        font-size: 16px;
+}
+
+.color-background{
+    background-color: hsl(15, 100%, 70%);
+    width:300px;
+    border-radius: 10px;
+   /*height: 88%;*/
+    width: 31.5%;
+    height: 88%;
+}
+
+.first-boxes{
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+   border: 2px solid red;
+    width: 830px;
+}
+
+.dark-blue-backgrounds{
+background-color:hsl(235, 46%, 20%);
+margin-top: 40px;
+height: 85.8%;
+border-radius: 10px;
+padding-top: 20px;
+padding-left: 20px;
+padding-right: 35px;
+
+}
+
+.elipses{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    font-weight: 500;
+    margin-bottom:28px;
+    margin-top: 10px;
+}
+
+.color-background.blue{
+    background-color: hsl(195, 74%, 62%);
+}
+
+.color-background.red{
+    background-color: hsl(348, 100%, 68%);
+}
+
+.color-background.green{
+    background-color: hsl(145, 58%, 55%);
+    
+}
+
+.color-background.purple{
+    background-color: hsl(264, 64%, 52%);
+}
+
+.color-background.yellow{
+    background-color: hsl(43, 84%, 65%);
+}
+
+.hide{
+    display: none;
+}
+
+.hours {
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 13px;
+}
+
+.previous{
+    color:hsl(236, 100%, 87%);
+    font-weight: 300px;
+    font-size: 16px;
+}
+
+button.active {
+    color: white;
+    /* Add other styles you want for the active button */
+}
+
+button.daily.active{
+    color:white;
+}

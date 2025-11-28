@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+
+    <!-- Bootstrap CSS for layout and basic styling -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Project custom styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Kumbh+Sans:wght@100..900&family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet">
+    <!-- Font Awesome icons -->
+    <script src="https://kit.fontawesome.com/7c2a43d02d.js" crossorigin="anonymous"></script>
+
+
+  <title>Memory Game</title>
+</head>
+<body>
+
+  <!-- Main Menu Section -->
+<section class = "main-menu">
+<img src="logo.svg" class = "logo mx-auto">
+
+<div class = "menu-container mx-auto mt-5 pt-1">
+  <div class = "padding-container">
+   <!-- Theme selection -->
+    <h5 class = "theme-header">Select Theme</h5>
+    <div class = "theme-buttons-container d-flex mt-4">
+      <button class = "theme-button font-weight-bold">Numbers</button>
+      <button class = "theme-button font-weight-bold">Icons</button>
+    </div>
+
+    <!-- Number of players selection -->
+    <h5 class="theme-header mt-5 mb-3">Numbers of Players</h5>
+    <div class = "num-of-players-container">
+      <button class="player-button font-weight-bold">1</button>
+      <button class="player-button font-weight-bold">2</button>
+      <button class="player-button font-weight-bold">3</button>
+      <button class="player-button font-weight-bold">4</button>
+    </div>
+
+    <!-- Grid size selection -->
+        <h5 class="theme-header mt-5">Grid Size</h5>
+    <div class="theme-buttons-container d-flex mt-3 mb-1">
+      <button class="grid-button font-weight-bold">4x4</button>
+      <button class="grid-button font-weight-bold">6x6</button>
+    </div>
+    
+    <!-- Start Game button -->
+    <button class="start-btn w-100 mt-4 font-weight-bold">Start Game</button>
+
+  </div> 
+</div>
+</section>
+
+<!-- Memory Gameboard Section (hidden initially) -->
+<section class = "memory-gameboard hide">
+  <!-- Top section with logo and restart/new game buttons -->
+  <div class = "top-container d-flex mx-auto mt-5 justify-content-between align-items-center">
+    <img src="logo.svg" class="logotwo">
+    <div class = "restart-buttons d-flex">
+      <button class = "restart-btn">Restart</button>
+      <button class = "new-game-btn">New Game</button>
+    </div>
+  </div>
+
+  <!-- Container for memory cards -->
+<div class="gameboard-circles-container d-flex flex-wrap mx-auto justify-content-center">
+</div>
+
+<!-- Player turn display -->
+<div class = "player-turn-container mx-auto d-flex justify-content-center align-items-center">
+</div>
+
+  <!-- Bottom section with timer and move counter -->
+<div class  = "bottom-container mx-auto d-flex">
+  <div class = "time-move-container">
+    Time <span class = "time">0 : 00</span>
+  </div>
+  <div class = "time-move-container">
+    Moves <span class="move-count">0</span>
+  </div>
+</div>
+
+
+</section>
+
+<!-- Win Screen Section (hidden initially) -->
+<section class = "win-screen hide ">
+<div class = "lightbox-bg position-fixed"></div> <!-- Background overlay -->
+<div class = "win-modal position-absolute d-flex align-items-center">
+  <h1 class = "win-header mt-5">Player 1 Wins!</h1>
+  <h6 class = "result-subheader mt-1">Game over! Here are the results...</h6>
+  <!-- Display player scores -->
+  <div class = "player-grid-container d-flex  mt-4">
+  </div>
+
+  <!-- Restart / New Game buttons -->
+  <div class = "restart-buttons d-flex">
+    <button class="restart-btn bigger mt-4">Restart</button>
+    <button class="new-game-btn bigger mt-4">New Game</button>
+  </div>
+</div>
+
+</section>
+<!-- Project JS -->
+<script src = index.js></script>
+</body>
+</html>

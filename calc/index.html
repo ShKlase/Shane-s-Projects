@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Font: Space Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <title>Tip Calculator</title>
+  <style>
+    /* Hide arrows in number input for WebKit browsers (Chrome, Safari) */
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="center">
+    <!-- Logo image -->
+    <img class="logo" src="./images/logo.svg">
+    <div class=overall-container>
+      <!-- Input Section -->
+      <div class=input-container>
+        <h4 class="lazy"> Bill</h4>
+
+        <form class="help-me">
+            <!-- Bill amount input -->
+          <input id="bill-input" type="number" placeholder="0">
+        </form>
+        <label class="select-tip">Select Tip %</label>
+        <div class="grid-container">
+            <!-- Tip percentage buttons -->
+          <button class="tip-percentage" type="button"> 5%</button>
+          <button class="tip-percentage" type="button"> 10%</button>
+          <button class="tip-percentage" type="button"> 15%</button>
+          <button class="tip-percentage" type="button"> 25%</button>
+          <button class="tip-percentage" type="button">50%</button>
+          <!-- Custom tip input -->
+          <input id="custom-button" type="number" placeholder="Custom">
+        </div>
+        <!-- Number of people section -->
+        <div class=ppl-container>
+          <p class="lazy-two"> Number of People</p>
+          <!-- Error message if number of people is zero -->
+          <p class="error hide">Can't be zero</p>
+        </div>
+        <form>
+          <input id="number-of-people" type="number" placeholder="0">
+
+        </form>
+      </div>
+      <!-- Result Section -->
+      <div class="content-container">
+        <div class="result-container">
+          <div class="padding-container">
+            <!-- Tip Amount per person -->
+            <div class=tip-amount>
+              <div>
+                <h4 class="tip-header"> Tip Amount</h4>
+                <p class="person">/ person</p>
+              </div>
+              <p class="total">$0.00</p>
+            </div>
+
+            <!-- Total per person including tip -->
+            <div class="tip-amount second">
+              <div>
+                <h4 class="tip-header"> Total </h4>
+                <p class="person "> / person</p>
+              </div>
+              <p class="total-second">$0.00</p>
+
+            </div>
+
+            <!-- Reset button -->
+            <button class="reset" type = "submit">
+              RESET
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript -->
+  <script src="index.js"></script>
+</body>
+
+</html>

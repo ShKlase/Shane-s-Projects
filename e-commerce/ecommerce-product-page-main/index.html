@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
+  <title>E-Commerce Product Page</title>
+
+ 
+</head>
+<body>
+  <!-- Main background wrapper -->
+<div class = "background">
+    <!-- Top navigation container -->
+  <div class = top-container>
+    <!-- Logo -->
+    <img src="./images/logo.svg" class = "logo">
+    <!-- Navigation buttons -->
+    <div class = grid-buttons>
+  <button class = "grey-buttons">Collections</button>
+  <button class = "grey-buttons">Men</button>
+  <button class = "grey-buttons">Women</button>
+  <button class = "grey-buttons">About</button>
+  <button class = "grey-buttons">Contact</button>
+  </div>
+
+  <!-- Cart icon and avatar container -->
+  <div class = cart-avatar-container>
+    <div class="items-in-cart hide">0</div> <!-- Dynamic cart count -->
+  <button class = "cart-access" type = "button"><img src="./images/icon-cart.svg"></button>
+  <img class = "avatar" src="./images/image-avatar.png">
+  </div>
+</div>
+
+<!-- Divider line -->
+<div class = "outline"></div>
+
+  <!-- Cart dropdown (hidden by default) -->
+<div class = "cart-when-clicked-container hide">
+<h3 class = "cart-header">Cart</h3>
+<div class="outline-2"></div>
+<div class = empty-container>
+Your cart is empty
+</div>
+</div>
+
+  <!-- Main product section -->
+<div class = product-container>
+  <!-- Product image gallery -->
+<div class = preview-images-container>
+<img src="./images/image-product-1.jpg" class = "product-1-img">
+
+<!-- Thumbnail grid -->
+<div class = "grid-img-container">
+<img src="./images/image-product-1.jpg" class = "product-images">
+<img src="./images/image-product-2.jpg" class = "product-images">
+<img src="./images/image-product-3.jpg" class = "product-images">
+<img src="./images/image-product-4.jpg" class = "product-images">
+
+</div>
+</div>
+<!-- Product description and controls -->
+<div class =item-description-container>
+  <h4 class = "sneaker-company-header">SNEAKER COMPANY</h4>
+
+  <h1 class = "product-header">Fall Limited Edition Sneakers</h1>
+
+  <p class = "item-description">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+  <!-- Pricing info -->
+  <div class = "sale-price-container">
+  <h1 class = "sale-price">$125.00</h1>
+    <div class = "sale-percentage">50%
+  </div>
+  </div>
+
+  <div class ="original-price">$250.00</div>
+
+  <!-- Cart quantity selector -->
+  <div class = "cart-counter-container">
+   <div class ="item-counter">
+    <button class = "plus-minus-buttons decrement" type = "button"><img src="./images/icon-minus.svg"></button>
+      <div class = "counter">0</div>
+    <button class = "plus-minus-buttons increment" type = "button"><img src="./images/icon-plus.svg"></button>
+  </div>
+  
+  <!-- Add to cart button -->
+  <button class = "add-to-cart-container">
+    <img src="./images/icon-cart.svg" class = "black">
+  Add to cart
+  </button>
+  </div>
+
+</div>
+</div>
+
+<!-- Modal lightbox for product images -->
+<div class="overlay hide"></div>
+<div class = "modal hide">
+  <button class="modal-close"><img src="./images/icon-close.svg" class = "orange-filter"></button>
+  <div class = modal-img-container>
+    <img src = "images/image-product-1.jpg" class = "product-1-img-2">
+        <button class = "next arr-btn"><img src="./images/icon-next.svg"></button>
+        <button class = "previous arr-btn"><img src="./images/icon-previous.svg"></button>
+      
+<!-- Modal thumbnails -->
+<div class="grid-img-container-2">
+  <img src="./images/image-product-1.jpg" class="product-images-two">
+  <img src="./images/image-product-2.jpg" class="product-images-two">
+  <img src="./images/image-product-3.jpg" class="product-images-two">
+  <img src="./images/image-product-4.jpg" class="product-images-two">
+
+  </div>
+</div>
+
+<!-- JS -->
+<script src="index.js"></script>
+</body>
+</html>

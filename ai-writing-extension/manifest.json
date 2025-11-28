@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "RefineRight",
+    "version": "1.0",
+    "description": "A lightweight AI writing assistant that helps improve clarity, tone, and grammar across any website.",
+    "permissions": ["storage", "activeTab", "scripting", "http://localhost:3000/"],
+    "host_permissions": ["https://api.openai.com/*", "<all_urls>"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    }, 
+    "content_scripts": [
+     {
+       "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }

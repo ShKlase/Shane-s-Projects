@@ -1,0 +1,90 @@
+@import "./variable.scss";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "antonio";
+    src: url("../public/fonts/Antonio-Medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "spartan";
+    src: url("../public/fonts/Spartan-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "spartan";
+    src: url("../public/fonts/Spartan-Regular.ttf");
+    font-weight: 400;
+}
+:root {
+    --Light: hsl(0, 0%, 100%);
+    --Dark: hsl(240, 67%, 8%);
+    --DarkGrey: hsl(240, 17%, 26%);
+    --Grey: hsl(240, 6%, 54%);
+    --Mercury: hsl(194, 48%, 49%);
+    --Venus: hsl(33, 82%, 61%);
+    --Earth: hsl(263, 67%, 51%, 1);
+    --Mars: hsl(10, 63%, 51%, 1);
+    --Jupiter: hsl(2, 68%, 53%, 1);
+    --Saturn: hsl(17, 73%, 46%, 1);
+    --Uranus: hsl(169, 73%, 44%, 1);
+    --Neptune: hsl(222, 87%, 56%, 1);
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: "spartan";
+    font-weight: 400;
+    color: var(--Light);
+    background-color: var(--Dark);
+    @media screen and (min-width: $desktop) {
+        font-size: 0.875rem;
+        line-height: 1.56rem;
+    }
+}
+h1 {
+    font-family: "antonio";
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+    @media screen and (min-width: $desktop) {
+        font-size: 5rem;
+        line-height: 6.4375rem;
+    }
+}
+h2 {
+    font-family: "spartan";
+    font-weight: 700;
+    font-size: 0.5rem;
+    line-height: 1rem;
+    letter-spacing: 0.73px;
+    @media screen and (min-width: $desktop) {
+        font-size: 0.6875rem;
+        line-height: 1.56rem;
+        letter-spacing: 1px;
+    }
+}
+
+h3 {
+    font-family: "antonio";
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+    letter-spacing: -0.75px;
+    @media screen and (min-width: $tablet) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: -0.9px;
+    }
+    @media screen and (min-width: $desktop) {
+        font-size: 2.5rem;
+        line-height: 3.25rem;
+        letter-spacing: -1.5px;
+    }
+}

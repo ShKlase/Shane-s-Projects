@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <!-- Load Bootstrap for responsive layout and spacing -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=League+Spartan:wght@100..900&display=swap"
+    rel="stylesheet">
+
+<title>Planet Facts!</title>
+</head>
+<body>
+<section class = "header">
+    <!-- Each button corresponds to one of the eight planets -->
+    <div class = "top-container d-flex pt-4 pl-4 pr-5 justify-content-between align-items-center">
+        <h1 class = "planet-header">THE PLANETS</h1>
+        <div class = "planet-btns">
+            <button class = "planet-btn">Mercury</button>
+            <button class = "planet-btn">Venus</button>
+            <button class = "planet-btn">Earth</button>
+            <button class = "planet-btn">Mars</button>
+            <button class = "planet-btn">Jupiter</button>
+            <button class="planet-btn">Saturn</button>
+            <button class="planet-btn">Uranus</button>
+            <button class="planet-btn">Neptune</button>
+        </div>
+    </div>
+    <div class ="divider w-100 mt-3"></div>
+</section>
+   <section  class = "body-container">
+    <div class = "planets-container mx-auto d-flex">
+        <div class = "planet-img"><img src="./assets/planet-earth.svg" class ="planet w-100"></div>
+        <div class = "planet-information d-flex">
+            <h1 class = "planet-info-header mb-4">EARTH</h1>
+            <p class = "planet-info">Third planet from the Sun and the only known planet to harbor life. About 29.2% of Earth's surface is land with
+            remaining 70.8% is covered with water. Earth's distance from the Sun, physical properties and geological history have
+            allowed life to evolve and thrive.
+            </p>
+            <div>
+                <span class ="source mt-3">Source :</span>
+                <a href="https://en.wikipedia.org/wiki/Earth" class = "wiki-link  ml-1">Wikipedia</a>
+                <button class="source-btn ml-1"><img src="./assets/icon-source.svg"></button>
+            </div>
+            <div class="planet-info-btns">
+                <button class="planet-info-btn"><span class ="planet-nmbrs">01</span> Overview</button>
+                <button class="planet-info-btn"><span class="planet-nmbrs">02</span> Internal Structure</button>
+                <button class="planet-info-btn"><span class="planet-nmbrs">03</span> Surface Geology</button>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <section class = "bottom-container">
+    <div class =  "facts-grid mx-auto">
+        <div class="fact-box"><h6 class = "fact-header">Rotation Time</h6>
+            <div class = "rotation-time">0.99 DAYS</div>
+        </div>
+        <div class="fact-box"><h6 class="fact-header">Revolution Time</h6>
+            <div class="revolution-time">365.26 DAYS</div>
+        </div>
+        <div class="fact-box"><h6 class="fact-header">Radius</h6>
+        <div class="radius">6,371 KM</div>
+        </div>
+        <div class="fact-box"><h6 class="fact-header">Average Temp.</h6>
+        <div class="average-temp">16°C</div>
+        </div>
+    </div>
+   </section>
+
+
+<script src=index.js></script>
+</body>
+
+
+</html>
+
+
+
+

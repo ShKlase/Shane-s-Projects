@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1E213F" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Roboto+Slab:wght@100..900&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet">
+    <title>Pomodoro App</title>
+  </head>
+  <body>
+
+    <!-- Logo & Timer Container -->
+  <div class = "logo-container d-flex justify-content-center align-items-center flex-column">
+   <img src="./assets/logo.svg" class = "logo">
+  <!-- Timer Selectors -->
+    <div class = "break-container">
+      <button class="selector" data-index="25">pomodoro</button>
+      <button class="selector" data-index="5">short break</button>
+      <button class="selector" data-index="15">long break</button>
+    </div>
+    <!-- Timer Circle (SVG) -->
+    <div class="timer-container">
+      <!-- Circular progress bar -->
+      <svg width="600" height="600" viewBox="-20 -20 190 190">
+        <circle cx="75" cy="75" r="70" stroke="#e6e6e6" stroke-width="10" fill="#161932"/>
+        <circle cx="115" cy="75" r="58" stroke="#f87070" stroke-width="4" fill="none" stroke-dasharray="364.42"
+          stroke-dashoffset="0" class="progress-circle" />
+      </svg>
+      <div class="timer-content">
+       <div class="timer-text">25:00</div>
+       <div class = "start-btn-container">
+        <button type="button" class = "start-btn btn outline-0">START</button>
+        <button type="button" class="restart-btn btn outline-0"><img src="./assets/reset-svgrepo-com.svg" class = "restart"></button>
+       </div>
+      </div>
+  
+    </div>
+
+    <!-- Settings Button -->
+    <button type = "button" class ="btn settings-btn"><img src="./assets/icon-settings.svg"></button>
+
+  </div>
+  <!-- Lightbox & Settings Modal -->
+  <div class = "lightbox z-4 hide"></div>
+    <section class = "settings-modal position-fixed bg-light z-5 hide">
+      <!-- Inputs for timer, font, color -->
+      <div class = "padding-box pl-4 pr-4 mt-4">
+        <div class = "d-flex align-items-center justify-content-between mb-4">
+          <h1 class = "settings-header fs-3 m-0">Settings</h1>
+          <button class = "btn close-btn"><img src="./assets/icon-close.svg" class = "close-img"></button>
+      </div>
+      <div class = "line-divider mb-4"></div>
+      <h2 class = "time-header mb-4">TIME (MINUTES)</h2>
+      <div class = "grid-container mb-4">
+        <div>
+          <label>pomodoro</label>
+          <input class = "form-control time-inputs" type = "number">
+        </div>
+        <div>
+          <label>short break</label>
+          <input class="form-control time-inputs" type = "number">
+        </div>
+        <div>
+          <label>long break</label>
+          <input class="form-control time-inputs" type = "number">
+        </div>
+      </div>
+        <p class="error m-0 mb-2 hide">Please Keep Time Under 100 Minutes.</p>
+      <div class="line-divider mb-4"></div>
+      <div class = "font-container d-flex w-100 align-items-center justify-content-between mb-4">
+        <h2 class="font-header time-header m-0">FONT</h2>
+        <div class = "fonts d-flex align-items-center m-0">
+          <button class = "Kumbh-Sans circle-buttons" data-font="Kumbh Sans">Aa</button>
+          <button class="Roboto-Slab circle-buttons" data-font="Roboto Slab">Aa</button>
+          <button class="Space-Mono circle-buttons" data-font="Space Mono">Aa</button>
+        </div>
+      </div>
+      <div class="line-divider mb-3"></div>
+      <div class="font-container d-flex w-100 align-items-center justify-content-between mb-4">
+        <h2 class="font-header time-header m-0">COLOR</h2>
+        <div class="fonts d-flex align-items-center m-0">
+
+          <button class="Kumbh-Sans circle-buttons-color red"></button>
+          <button class="Roboto-Slab circle-buttons-color blue"></button>
+          <button class="Space-Mono circle-buttons-color purple"></button>
+        </div>
+      </div>
+      </div>
+      <button class = "apply-btn position-absolute">Apply</button>
+    </section>
+
+
+    <!-- Alarm Sound -->
+    <audio id="alarm-sound">
+      <source src="sounds/mixkit-short-rooster-crowing-2470.wav" type="audio/mpeg">
+      Your browser does not support the audio element.
+      
+      <script src="./index.js"></script>
+  </audio>
+  </body>
+</html>

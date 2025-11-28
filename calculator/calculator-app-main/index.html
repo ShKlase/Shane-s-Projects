@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Practicing Bootstrap for responsive layout -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel = "stylesheet" href="style.css">
+  <title>Frontend Mentor | Calculator app</title>
+
+
+</head>
+<body>
+  <!-- Main calculator container -->
+<div class = "calc-container mx-auto">
+  <!-- Header section with logo and theme toggle -->
+  <div class = "logo-theme-container d-flex align-items-center justify-content-between">
+    <h1 class = "logo-header">calc</h1> 
+    <div class = "theme-toggle-container d-flex align-items-center gap-5">
+      <!-- Slider for theme selection -->
+      <label class="theme-label fs-6">THEME</label>
+      
+        <div class="theme-numbers d-flex justify-content-between  position-absolute">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+        </div>
+      <input type="range" id="theme-toggle" min="1" max="3" step = '1' value = "1">
+    </div>
+  </div>
+    <!-- Display for current calculation / result -->
+  <div class = "result-container d-flex align-items-center justify-content-end">
+    <div class ="result">0</div>
+  </div>
+
+  <!-- Buttons container for calculator input -->
+  <div class = "calc-button-container mt-4">
+    <div class = "padding-container">
+      <!-- Number buttons and operators -->
+      <button class="calc-nmbr-btns">7</button>
+      <button class="calc-nmbr-btns">8</button>
+      <button class="calc-nmbr-btns">9</button>
+      <button class="calc-nmbr-btns fs-3 delete-btn">DEL</button>
+      <button class="calc-nmbr-btns">4</button>
+      <button class="calc-nmbr-btns">5</button>
+      <button class="calc-nmbr-btns">6</button>
+      <button class="calc-nmbr-btns">+</button>
+      <button class="calc-nmbr-btns">1</button>
+      <button class="calc-nmbr-btns">2</button>
+      <button class="calc-nmbr-btns">3</button>
+      <button class="calc-nmbr-btns">-</button>
+      <button class="calc-nmbr-btns">.</button>
+      <button class="calc-nmbr-btns">0</button>
+      <button class="calc-nmbr-btns">/</button>
+      <button class="calc-nmbr-btns">x</button>
+    </div>
+    <!-- Reset and equals buttons -->
+    <div class = "reset-container d-flex mt-4 gap-3">
+      <button class = "reset bottom delete-btn fs-4 d-flex justify-content-center align-items-center">RESET</button>
+      <button class= "equals-btn bottom fs-4 d-flex justify-content-center align-items-center">=</button>
+    </div>
+  </div>
+</div>
+  
+<!-- JavaScript logic for calculator -->
+<script src = "index.js"></script>
+</body>
+</html>
